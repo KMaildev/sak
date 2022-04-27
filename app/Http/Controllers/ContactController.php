@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreContact;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -23,7 +25,6 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -32,9 +33,16 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreContact $request)
     {
-        //
+        $contact = new Contact();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->subject = $request->subject;
+        $contact->phone = $request->phone;
+        $contact->message = $request->message;
+        $contact->save();
+        return redirect()->back()->with('success', 'Thank you for your contact. our team is ready to response all your queries..');
     }
 
     /**

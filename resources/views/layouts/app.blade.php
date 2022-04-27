@@ -5,6 +5,7 @@
 @endif
 
 
+@include('layouts.includes.alert')
 @yield('content')
 
 @include('layouts.includes.footer')

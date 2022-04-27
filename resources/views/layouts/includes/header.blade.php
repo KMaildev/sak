@@ -8,7 +8,7 @@
         content="Digital Marketing Agencies, SEO companies & Social Media specialists HTML5 Template" />
     <meta name="keywords" content="marketing,seo,ppc,mapping,linkbuilding,analytics,ads" />
     <meta name="author" content="ThemeMascot" />
-    <title>Study School College & University Template</title>
+    <title>Saint Arkar Company Limited @yield('title')</title>
 
     <!-- Stylesheet -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -21,8 +21,6 @@
         rel="stylesheet" />
     <!-- CSS | Main style file -->
     <link href="{{ asset('assets/css/style-main.css') }}" rel="stylesheet" type="text/css">
-    <!-- CSS | Preloader Styles -->
-    <link href="{{ asset('assets/css/preloader.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Custom Margin Padding Collection -->
     <link href="{{ asset('assets/css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Responsive media queries -->
