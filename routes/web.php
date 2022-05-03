@@ -14,6 +14,7 @@ Route::resource('partner', 'PartnerController');
 Route::resource('language_training', 'LanguageTrainingController');
 Route::resource('tailoring_training', 'TailoringTrainingController');
 Route::resource('medical_training', 'MedicalTrainingController');
+Route::resource('job_enquiry', 'JobEnquiryController');
 
 
 Route::resource('about', 'AboutController');

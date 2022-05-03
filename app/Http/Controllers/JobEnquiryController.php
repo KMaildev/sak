@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TrainingPhoto;
+use App\Http\Requests\StoreJobEnquiry;
+use App\Models\JobEnquiry;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
-class MedicalTrainingController extends Controller
+class JobEnquiryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,7 @@ class MedicalTrainingController extends Controller
      */
     public function index()
     {
-        $images = TrainingPhoto::where('category', 'caregiver_training')->get();
-        return view('medical_training.index', compact('images'));
+        //
     }
 
     /**
@@ -34,9 +35,32 @@ class MedicalTrainingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreJobEnquiry $request)
     {
-        //
+
+        if ($request->hasFile('attachment_file')) {
+            $attachment_file = $request->file('attachment_file');
+            $path = $attachment_file->store('public/attachment_file');
+            $original_name = $attachment_file->getClientOriginalName();
+        }
+
+        $job = new JobEnquiry();
+        $job->name = $request->name;
+        $job->nrc = $request->nrc;
+        $job->email = $request->email;
+        $job->phone = $request->phone;
+        $job->date_of_birth = $request->date_of_birth;
+        $job->age = $request->age;
+        $job->gender = $request->gender;
+        $job->passport = $request->passport;
+        $job->expire_date = $request->expire_date;
+        $job->education = $request->education;
+        $job->language = $request->language;
+        $job->current_address = $request->current_address;
+        $job->attachment_file = $original_name ?? '';
+        $job->path = $path ?? '';
+        $job->save();
+        return redirect()->back()->with('success', 'Thank you for your contact. our team is ready to response all your queries..');
     }
 
     /**
