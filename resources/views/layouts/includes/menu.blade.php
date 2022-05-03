@@ -37,11 +37,124 @@
                     <ul class="menuzord-menu">
 
                         <li class="">
-                            <a href="{{ route('home') }}">Home</a>
+                            <a href="{{ route('home') }}" style="font-weight: bold">
+                                Home
+                            </a>
                         </li>
 
                         <li class="">
-                            <a href="{{ route('contact.index') }}">Contact Us</a>
+                            <a href="#" style="font-weight: bold">About Us</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ route('about.index') }}">
+                                        About of Our Company
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="{{ route('md_message') }}">
+                                        MD Message
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('why_choose') }}">
+                                        Why Choose ASK?
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('team.index') }}">
+                                        Meet Our People
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('partner.index') }}">
+                                        Our Partners
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="">
+                            <a href="#" style="font-weight: bold">Recruit Services</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ route('medical_training.index') }}">
+                                        Caregiver Training
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('tailoring_training.index') }}">
+                                        Tailoring Training
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('language_training.index') }}">
+                                        Language Training
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="">
+                            <a href="#" style="font-weight: bold">Jobs in Overseas</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ route('about.index') }}">
+                                        Jobs in Singapore
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="">
+                            <a href="#" style="font-weight: bold">Career Advice</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ route('carrer_advice.index') }}">
+                                        Career Advice
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('cv.index') }}">
+                                        Submit Your CV
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="#" style="font-weight: bold">Our Training Center</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ route('training.index') }}">
+                                        Kanji Training Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="{{ route('faq.index') }}" style="font-weight: bold">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="{{ route('contact.index') }}" style="font-weight: bold">
+                                Contact Us
+                            </a>
                         </li>
 
                     </ul>

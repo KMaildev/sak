@@ -10,6 +10,7 @@
     <meta name="author" content="ThemeMascot" />
     <title>Saint Arkar Company Limited @yield('title')</title>
 
+    <link href="{{ asset('data/siteicon.jpeg') }}" rel="shortcut icon" type="image/png">
     <!-- Stylesheet -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css">

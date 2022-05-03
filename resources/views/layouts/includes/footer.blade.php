@@ -137,8 +137,8 @@
         <div class="container pt-10 pb-0">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="font-14 text-black-777 m-0 mb-10">Copyright &copy;2017 ThemeMascot. All Rights
-                        Reserved</p>
+                    <p class="font-14 text-black-777 m-0 mb-10">
+                        Copyright &copy; {{ now()->year }} Saint Arkar Company Limited. All Rights Reserved</p>
                 </div>
             </div>
         </div>
