@@ -91,9 +91,4 @@ class AboutController extends Controller
     {
         return view('about.who_we_are');
     }
-
-    public function why_choose()
-    {
-        return view('about.why_choose');
-    }
 }

@@ -27,39 +27,35 @@
         <div class="container pb-90 pb-sm-90">
             <div class="section-content">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-4 col-lg-4" data-wow-duration="1s" data-wow-delay="0.3s">
                         <h2 class="mt-0 line-height-1 line-bottom-edu">Term Dates</h2>
                         <div class="owl-carousel-1col" data-nav="true">
 
                             <div class="item">
                                 <div class="newcomer">
-                                    <img src="{{ asset('data/about.jpeg') }}" alt="">
-                                    <div class="newcomer-overlay">
-                                        <div class="newcomer-inner">
-                                            <h3 class="text-white">Spring Schedule </h3>
-                                            <h4 class="text-white">15 January to 11 March</h4>
-                                        </div>
-                                    </div>
+                                    <img src="{{ asset('data/6.jpg') }}" alt=""
+                                        style="width: 100%; height: 370px; background-size: center; object-fit: cover;">
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="newcomer">
-                                    <img src="{{ asset('assets/images/about/4.jpg') }}" alt="">
-                                    <div class="newcomer-overlay">
-                                        <div class="newcomer-inner">
-                                            <h3 class="text-white">Fall Schedule </h3>
-                                            <h4 class="text-white">23 April to 17 June</h4>
-                                            <a class="btn btn-flat btn-theme-colored2 font-weight-600 flip mt-10"
-                                                href="#">Join Here 20% off</a>
-                                        </div>
-                                    </div>
+                                    <img src="{{ asset('data/3.jpg') }}" alt=""
+                                        style="width: 100%; height: 370px; background-size: center; object-fit: cover;">
                                 </div>
                             </div>
+
+                            <div class="item">
+                                <div class="newcomer">
+                                    <img src="{{ asset('data/2.jpg') }}" alt=""
+                                        style="width: 100%; height: 370px; background-size: center; object-fit: cover;">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="col-sm-12 col-md-8 col-lg-8" data-wow-duration="1s" data-wow-delay="0.3s">
                         <h2 class="mt-0 mt-sm-30 line-height-1 line-bottom-edu">
                             About
                             <span class="text-theme-colored3">
@@ -86,6 +82,128 @@
                             skills, at the right time.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="text-center bg-silver-light">
+        <div class="container pb-70 pb-sm-60">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center line-height-1 mt-0">Why<span class="text-theme-colored3"> Choose</span> Us
+                        </h2>
+                        <p class="text-center">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row equal-height">
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-line-chart"></i>
+                            </a>
+                            <h4 class="icon-box-title">Career Progression</h4>
+                            <p class="text-gray">
+                                We know how important your career is to you. It’s important to us too! That’s why we have a
+                                clear and transparent career path with international opportunities, supported by our
+                                industry-renowned training and development.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                            <h4 class="icon-box-title">We’re locally owned</h4>
+                            <p class="text-gray">
+                                If you want to place a candidate, you’ll benefit from our on-the-ground expertise. If you
+                                require a candidate to be placed elsewhere, you’ll benefit from our extensive networks in
+                                capital cities, major regional cities and even remote parts of the country.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-pie-chart"></i>
+                            </a>
+                            <h4 class="icon-box-title">Talent development</h4>
+                            <p class="text-gray">
+                                Talent development is becoming increasingly important to both organizations and their
+                                employees.
+                                SAK offers a clear and transparent career journey and provides the support and development
+                                needed for people to reach their potential.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-th-large"></i>
+                            </a>
+                            <h4 class="icon-box-title">Highly experienced</h4>
+                            <p class="text-gray">
+                                The team at SAK brings more than 10 years’ experience to the table and is skilled at
+                                recruiting at all levels, in all industries and in all sectors.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-toggle-up"></i>
+                            </a>
+                            <h4 class="icon-box-title">We receive referrals</h4>
+                            <p class="text-gray">
+                                Every year the number of referrals we receive grows. This includes personal referrals from
+                                employers and jobseekers. It’s a great testament to our high level of professionalism and
+                                service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box iconbox-theme-colored">
+                            <a class="icon icon-dark icon-bordered icon-rounded icon-border-effect effect-rounded mb-10"
+                                href="#">
+                                <i class="fa fa-users"></i>
+                            </a>
+                            <h4 class="icon-box-title">Partnership Approach</h4>
+                            <p class="text-gray">
+                                Recruiters can only manage one particular geographic location, or profession and/or industry
+                                of specialization. Recruiters partner with other recruiters to take advantage of different
+                                candidate databases, industry knowledge, and client relationships.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div role="alert" class="alert alert-info">
+                            <i style="font-size: 24px; color:#7c0c6c; text-shadow: 3px 3px 3px gray;">
+                                Working with SAK is a pleasure, fun and good for my organisation and the people we recruit.
+                            </i>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>

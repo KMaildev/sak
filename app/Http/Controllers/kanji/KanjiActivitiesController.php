@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\kanji;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TrainingController extends Controller
+class KanjiActivitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class TrainingController extends Controller
      */
     public function index()
     {
-        return view('training.index');
+        //
     }
 
     /**

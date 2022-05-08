@@ -13,15 +13,15 @@
                     <div class="widget">
                         <ul class="list-inline text-right flip sm-text-center">
                             <li>
-                                <a class="text-white" href="#">FAQ</a>
+                                <a class="text-white" href="{{ route('faq.index') }}">FAQ</a>
                             </li>
                             <li class="text-white">|</li>
                             <li>
-                                <a class="text-white" href="#">Help Desk</a>
+                                <a class="text-white" href="{{ route('kanji_training.index') }}">KANJI</a>
                             </li>
                             <li class="text-white">|</li>
                             <li>
-                                <a class="text-white" href="#">Support</a>
+                                <a class="text-white" href="{{ route('cv.index') }}">Submit CV</a>
                             </li>
                         </ul>
                     </div>
@@ -34,7 +34,7 @@
         <div class="container pt-20 pb-20">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3">
-                    <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html">
+                    <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="{{ route('home') }}">
                         <img src="{{ asset('assets/images/logo-wide.png') }}" alt="">
                     </a>
                 </div>
@@ -110,19 +110,14 @@
 
                                 <li>
                                     <a href="{{ route('md_message') }}">
-                                        MD Message
+                                        MD'S Message
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a href="{{ route('why_choose') }}">
-                                        Why Choose ASK?
-                                    </a>
-                                </li>
+                 
 
                                 <li>
                                     <a href="{{ route('team.index') }}">
-                                        Meet Our People
+                                        Meet Our Team
                                     </a>
                                 </li>
 
@@ -196,8 +191,8 @@
                             <a href="#" style="font-weight: bold">Our Training Center</a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="{{ route('training.index') }}">
-                                        Kanji Training Center
+                                    <a href="{{ route('kanji_training.index') }}">
+                                        KANJI Japanese Language Centre
                                     </a>
                                 </li>
                             </ul>
@@ -210,7 +205,7 @@
                         </li>
 
                         <li class="">
-                            <a href="{{ route('contact.index') }}" style="font-weight: bold">
+                            <a href="{{ route('activities.index') }}" style="font-weight: bold">
                                 Activities
                             </a>
                         </li>

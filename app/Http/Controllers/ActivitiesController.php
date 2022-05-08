@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activities;
 use Illuminate\Http\Request;
 
-class PartnerController extends Controller
+class ActivitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +14,8 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        
-        return view('partner.index');
+        $activities = Activities::all();
+        return view('activities.index', compact('activities'));
     }
 
     /**

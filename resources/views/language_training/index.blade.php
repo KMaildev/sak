@@ -151,8 +151,8 @@
                                 @foreach ($values as $photo)
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="about-thumb">
-                                            <img src="{{ $photo }}" class="mt-5" alt=""
-                                                style="width: 100%; height: 200px; background-size: center; object-fit: cover; border: 3px solid #eb6033;">
+                                            <img src="{{ $photo }}" class="mt-5 wow zoomIn" alt=""
+                                                style="width: 100%; height: 200px; background-size: center; object-fit: cover; border: 3px solid #eb6033;" data-wow-duration="1.5s" data-wow-offset="10">
                                         </div>
                                     </div>
                                 @endforeach

@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\kanji;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PartnerController extends Controller
+class KanjiContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +14,7 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        
-        return view('partner.index');
+        return view('kanji.contact.index');
     }
 
     /**

@@ -22,18 +22,22 @@
                                 class="text-gray" href="#">www.yourdomain.com</a> </li>
                     </ul>
                 </div>
-                <div class="widget dark">
-                    <h5 class="widget-title mb-10">Connect With Us</h5>
-                </div>
+             
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
                     <h5 class="widget-title line-bottom">Latest News</h5>
+             
+                </div>
+                <div class="widget dark">
+                    <h5 class="widget-title">Instagram Feed</h5>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark mb-30">
                     <h5 class="widget-title line-bottom">Twitter Feed</h5>
+                    <div class="twitter-feed list-border clearfix" data-username="Envato" data-count="2">
+                    </div>
                 </div>
                 <div class="widget dark">
                     <h5 class="widget-title">Useful Links</h5>

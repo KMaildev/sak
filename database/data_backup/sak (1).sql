@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 08, 2022 at 08:31 AM
+-- Generation Time: May 08, 2022 at 08:51 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.27
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `sak`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `activities`
+--
+
+CREATE TABLE `activities` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `photo` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `activities`
+--
+
+INSERT INTO `activities` (`id`, `title`, `description`, `photo`, `created_at`, `updated_at`) VALUES
+(1, 'Sewing Training', 'Providing sewing training for workers prior to the departure to Thailand.', 'http://localhost/projects/sak/admin/uploads/files/1.jpg,http://localhost/projects/sak/admin/uploads/files/1.jpg,http://localhost/projects/sak/admin/uploads/files/2.jpg,http://localhost/projects/sak/admin/uploads/files/3.jpg,http://localhost/projects/sak/admin/uploads/files/4.jpg,http://localhost/projects/sak/admin/uploads/files/5.jpg\n', NULL, NULL),
+(2, 'Sewing Training', 'Prior to departure, workers are given orientation in order for them to fit into the sending country’s culture , job requirement, rules and regulations.', 'http://localhost/projects/sak/admin/uploads/files/1.jpg,http://localhost/projects/sak/admin/uploads/files/2.jpg,http://localhost/projects/sak/admin/uploads/files/3.jpg,http://localhost/projects/sak/admin/uploads/files/4.jpg,http://localhost/projects/sak/admin/uploads/files/5.jpg\n', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -187,7 +210,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (10, '2022_05_06_054042_create_countries_table', 7),
 (11, '2022_05_06_074318_create_overseas_jobs_table', 8),
 (12, '2022_05_08_051243_create_carrer_advice_table', 9),
-(13, '2022_05_08_051642_add_photo_to_carrer_advice_table', 10);
+(13, '2022_05_08_051642_add_photo_to_carrer_advice_table', 10),
+(14, '2022_05_08_070301_create_activities_table', 11),
+(15, '2022_05_08_153743_create_partners_table', 12);
 
 -- --------------------------------------------------------
 
@@ -213,6 +238,21 @@ INSERT INTO `overseas_jobs` (`id`, `country_id`, `job_title`, `created_at`, `upd
 (3, 1, 'Electronic Factory', NULL, NULL),
 (4, 1, 'Super Market', NULL, NULL),
 (5, 1, 'Restaurants', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `partners`
+--
+
+CREATE TABLE `partners` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `company_logo` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_website` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country_id` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -300,6 +340,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Indexes for table `activities`
+--
+ALTER TABLE `activities`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `carrer_advice`
 --
 ALTER TABLE `carrer_advice`
@@ -348,6 +394,12 @@ ALTER TABLE `overseas_jobs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `partners`
+--
+ALTER TABLE `partners`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `password_resets`
 --
 ALTER TABLE `password_resets`
@@ -375,6 +427,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `activities`
+--
+ALTER TABLE `activities`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `carrer_advice`
@@ -416,13 +474,19 @@ ALTER TABLE `job_enquiries`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `overseas_jobs`
 --
 ALTER TABLE `overseas_jobs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `partners`
+--
+ALTER TABLE `partners`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `teams`
