@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TrainingPhoto;
 use Illuminate\Http\Request;
 
 class LanguageTrainingController extends Controller
@@ -13,7 +14,8 @@ class LanguageTrainingController extends Controller
      */
     public function index()
     {
-        //
+        $images = TrainingPhoto::where('category', 'language_training')->get();
+        return view('language_training.index', compact('images'));
     }
 
     /**

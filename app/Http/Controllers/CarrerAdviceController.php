@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CarrerAdvice;
 use Illuminate\Http\Request;
 
 class CarrerAdviceController extends Controller
@@ -13,7 +14,8 @@ class CarrerAdviceController extends Controller
      */
     public function index()
     {
-        return view('carrer_advice.index');
+        $carrer_advices = CarrerAdvice::all();
+        return view('carrer_advice.index', compact('carrer_advices'));
     }
 
     /**
@@ -45,7 +47,9 @@ class CarrerAdviceController extends Controller
      */
     public function show($id)
     {
-        //
+        $carrer_advice_posts = CarrerAdvice::all();
+        $carrer_advice = CarrerAdvice::findOrFail($id);
+        return view('carrer_advice.show', compact('carrer_advice_posts', 'carrer_advice'));
     }
 
     /**

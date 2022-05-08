@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Faq;
 use Illuminate\Http\Request;
 
-class FaqController extends Controller
+class CountryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class FaqController extends Controller
      */
     public function index()
     {
-        $faqs = Faq::all();
-        return view('faq.index', compact('faqs'));
+        //
     }
 
     /**

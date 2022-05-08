@@ -1,25 +1,27 @@
 <header id="header" class="header">
-    <div class="header-top bg-light sm-text-center style-bordered">
+
+    <div class="header-top bg-theme-colored2 sm-text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="widget">
-                        <i class="fa fa-clock-o text-theme-colored"></i> Opening Hours: Mon - Tues : 6.00 am -
-                        5.00 pm, Sunday Closed
+                <div class="col-md-8">
+                    <div class="widget text-white">
+                        <i class="fa fa-clock-o text-white"></i>
+                        Opening Hours: Mon - Tues : 6.00 am - 5.00 pm, Sunday Closed
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="widget">
-                        <ul class="list-inline pull-right flip sm-pull-none sm-text-center list-bordered">
-                            <li class="bg-theme-colored text-white mb-xs-5">
-                                <i class="fa fa-phone"></i> Call
-                                Us at <a class="text-white" href="tel:+959 250 419 702">+959 250 419 702</a>
+                        <ul class="list-inline text-right flip sm-text-center">
+                            <li>
+                                <a class="text-white" href="#">FAQ</a>
                             </li>
-                            <li class="bg-theme-colored3 text-white mb-xs-5">
-                                <i class="fa fa-envelope-o"></i>
-                                <a class="text-white" href="mailto:info@recruitmentmyanmarsak.com">
-                                    info@recruitmentmyanmarsak.com
-                                </a>
+                            <li class="text-white">|</li>
+                            <li>
+                                <a class="text-white" href="#">Help Desk</a>
+                            </li>
+                            <li class="text-white">|</li>
+                            <li>
+                                <a class="text-white" href="#">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -27,13 +29,67 @@
             </div>
         </div>
     </div>
+
+    <div class="header-middle p-0 bg-lighter xs-text-center">
+        <div class="container pt-20 pb-20">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html">
+                        <img src="{{ asset('assets/images/logo-wide.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <div class="header-widget-contact-info-box sm-text-center">
+                        <div class="media element contact-info">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="fa fa-envelope text-theme-colored font-icon sm-display-block"></i>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="mailto:info@recruitmentmyanmarsak.com" class="title">Mail Us Today</a>
+                                <h5 class="media-heading subtitle">
+                                    info@recruitmentmyanmarsak.com
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="media element contact-info">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="fa fa-phone-square text-theme-colored font-icon sm-display-block"></i>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="tel:+959 250 419 702" class="title">Call us for more details</a>
+                                <h5 class="media-heading subtitle">
+                                    +959 250 419 702
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="media element contact-info">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="fa fa-building-o text-theme-colored font-icon sm-display-block"></i>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" class="title">Company Location</a>
+                                <h5 class="media-heading subtitle">
+                                    Get Direction
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="header-nav">
         <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
             <div class="container">
-                <nav id="menuzord-right" class="menuzord orange no-bg">
-                    <a class="menuzord-brand pull-left flip mb-15" href="index-mp-layout1.html">
-                        {{-- <img src="{{ asset('assets/images/logo-wide.png') }}" alt=""> --}}
-                    </a>
+                <nav id="menuzord" class="menuzord blue no-bg">
+
                     <ul class="menuzord-menu">
 
                         <li class="">
@@ -91,7 +147,7 @@
 
                                 <li>
                                     <a href="{{ route('tailoring_training.index') }}">
-                                        Tailoring Training
+                                        Garment Training
                                     </a>
                                 </li>
 
@@ -108,11 +164,13 @@
                         <li class="">
                             <a href="#" style="font-weight: bold">Jobs in Overseas</a>
                             <ul class="dropdown">
-                                <li>
-                                    <a href="{{ route('about.index') }}">
-                                        Jobs in Singapore
-                                    </a>
-                                </li>
+                                @foreach ($countries as $country)
+                                    <li>
+                                        <a href="{{ route('overseas_jobs.show', $country->id) }}">
+                                            Jobs Available In {{ $country->country ?? '' }}
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </li>
 
@@ -153,11 +211,18 @@
 
                         <li class="">
                             <a href="{{ route('contact.index') }}" style="font-weight: bold">
-                                Contact Us
+                                Activities
                             </a>
                         </li>
 
                     </ul>
+
+                    <div class="pull-right sm-pull-none mb-sm-15">
+                        <a class="btn btn-colored btn-flat btn-theme-colored mt-15 mt-sm-10 pt-10 pb-10"
+                            href="{{ route('contact.index') }}">
+                            Contact Us
+                        </a>
+                    </div>
                 </nav>
             </div>
         </div>

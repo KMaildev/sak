@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
+use App\Models\OverseasJob;
 use Illuminate\Http\Request;
 
 class OverseasJobsController extends Controller
@@ -45,7 +47,9 @@ class OverseasJobsController extends Controller
      */
     public function show($id)
     {
-        //
+        $country = Country::findOrFail($id);
+        $jobs = OverseasJob::get()->where('country_id', $id);
+        return view('overseas_job.show', compact('country', 'jobs'));
     }
 
     /**

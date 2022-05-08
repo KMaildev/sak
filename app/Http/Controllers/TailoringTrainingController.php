@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TrainingPhoto;
 use Illuminate\Http\Request;
 
 class TailoringTrainingController extends Controller
@@ -13,7 +14,8 @@ class TailoringTrainingController extends Controller
      */
     public function index()
     {
-        //
+        $images = TrainingPhoto::where('category', 'tailoring_training')->get();
+        return view('tailoring_training.index', compact('images'));
     }
 
     /**
