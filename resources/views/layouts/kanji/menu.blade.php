@@ -20,7 +20,7 @@
                             </li>
                             <li class="bg-theme-colored3 text-white mb-xs-5">
                                 <i class="fa fa-th-list"></i>
-                                <a class="text-white" href="#">
+                                <a class="text-white" href="{{ route('kanji_enrollment_request.index') }}">
                                     Enrollment Request Form
                                 </a>
                             </li>
@@ -34,8 +34,10 @@
     <div class="header-nav">
         <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
             <div class="container">
-                <nav id="menuzord-right" class="menuzord orange no-bg"><a class="menuzord-brand pull-left flip mb-15"
-                        href="index-mp-layout1.html"><img src="images/logo-wide.png" alt=""></a>
+                <nav id="menuzord-right" class="menuzord orange no-bg">
+                    <a class="menuzord-brand pull-left flip mb-15" href="{{ route('kanji_training.index') }}">
+                        <img src="{{ asset('data/kanji/logo.jpg') }}" alt="">
+                    </a>
                     <ul class="menuzord-menu">
 
                         <li class="">
@@ -54,7 +56,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="{{ route('tailoring_training.index') }}">
+                                    <a href="{{ route('kanji_teacher.index') }}">
                                         Our Teachers
                                     </a>
                                 </li>

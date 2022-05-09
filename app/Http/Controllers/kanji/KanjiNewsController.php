@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\kanji;
 
 use App\Http\Controllers\Controller;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class KanjiNewsController extends Controller
@@ -14,7 +15,8 @@ class KanjiNewsController extends Controller
      */
     public function index()
     {
-        //
+        $news = News::all();
+        return view('kanji.news.index', compact('news'));
     }
 
     /**
@@ -46,7 +48,9 @@ class KanjiNewsController extends Controller
      */
     public function show($id)
     {
-        //
+        $news_posts = News::all();
+        $news = News::findOrFail($id);
+        return view('kanji.news.show', compact('news_posts', 'news'));
     }
 
     /**

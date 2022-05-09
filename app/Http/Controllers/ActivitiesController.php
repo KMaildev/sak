@@ -14,7 +14,7 @@ class ActivitiesController extends Controller
      */
     public function index()
     {
-        $activities = Activities::all();
+        $activities = Activities::where('category', 'sak')->get();
         return view('activities.index', compact('activities'));
     }
 

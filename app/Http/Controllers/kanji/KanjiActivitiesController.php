@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\kanji;
 
 use App\Http\Controllers\Controller;
+use App\Models\Activities;
 use Illuminate\Http\Request;
 
 class KanjiActivitiesController extends Controller
@@ -14,7 +15,8 @@ class KanjiActivitiesController extends Controller
      */
     public function index()
     {
-        //
+        $activities = Activities::where('category', 'kanji')->get();
+        return view('kanji.activities.index', compact('activities'));
     }
 
     /**

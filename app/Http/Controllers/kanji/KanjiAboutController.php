@@ -14,7 +14,7 @@ class KanjiAboutController extends Controller
      */
     public function index()
     {
-        //
+        return view('kanji.about.index');
     }
 
     /**

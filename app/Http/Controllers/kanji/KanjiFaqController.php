@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\kanji;
 
 use App\Http\Controllers\Controller;
+use App\Models\KanjiFaq;
 use Illuminate\Http\Request;
 
 class KanjiFaqController extends Controller
@@ -14,7 +15,8 @@ class KanjiFaqController extends Controller
      */
     public function index()
     {
-        //
+        $faqs = KanjiFaq::all();
+        return view('kanji.faq.index', compact('faqs'));
     }
 
     /**

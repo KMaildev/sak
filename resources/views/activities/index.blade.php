@@ -38,7 +38,7 @@
                             </p>
                         </div>
 
-                        <div class="gallery-isotope default-animation-effect grid-4 masonry gutter-small clearfix"
+                        <div class="gallery-isotope default-animation-effect grid-3 masonry gutter-small clearfix"
                             data-lightbox="gallery">
                             <div class="gallery-item gallery-item-sizer"></div>
                             @php
@@ -49,7 +49,7 @@
                                     <a href="{{ $photo }}" data-lightbox="gallery-item"
                                         title="Saint Arkar Company Limited">
                                         <img src="{{ $photo }}" alt="Saint Arkar Company Limited"
-                                            style="width: 100%; height: 200px; background-size: center; object-fit: cover; border: 3px solid #458cd2;">
+                                            style="width: 100%; height: 260px; background-size: center; object-fit: cover; border: 3px solid #458cd2; padding: 10px;">
                                     </a>
                                 </div>
                             @endforeach

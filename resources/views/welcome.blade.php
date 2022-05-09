@@ -336,13 +336,16 @@
     <ul class="ch-grid country_bg" style="background-color: white">
         @foreach ($countries as $country)
             <li>
-                <div class="ch-item" style="background-image: url(https://cdn4.iconfinder.com/data/icons/free-scuba-diving-icon-set/128/seahorse.png);
+                <div class="ch-item" style="background-image: url({{ $country->photo }});
                     background-repeat: no-repeat;
-                    background-position: center;">
+                    background-position: center;
+                    background-size: center; 
+                    object-fit: cover;
+                    ">
                     <div class="ch-info">
                         <a href="{{ route('overseas_jobs.show', $country->id) }}">
                             <h3>{{ $country->country ?? '' }}</h3>
-                            <p>Jobs</p>
+                            <p>Search Jobs</p>
                         </a>
                     </div>
                 </div>

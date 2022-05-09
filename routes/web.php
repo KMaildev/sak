@@ -33,3 +33,5 @@ Route::resource('kanji_activities', 'kanji\KanjiActivitiesController');
 Route::resource('kanji_faq', 'kanji\KanjiFaqController');
 Route::resource('kanji_news', 'kanji\KanjiNewsController');
 Route::resource('kanji_contact', 'kanji\KanjiContactController');
+Route::resource('kanji_teacher', 'kanji\TeacherController');
+Route::resource('kanji_enrollment_request', 'kanji\EnrollmentRequest');
