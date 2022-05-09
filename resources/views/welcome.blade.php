@@ -1,179 +1,352 @@
 @extends('layouts.app')
+@section('title', 'Home')
 @section('content')
-    <section style="background-position:center center !important;" data-bg-image="url"
-        class="vc_row wpb_row vc_row-fluid intro-home three-section vc_custom_1629983417707 row-contains-padding-top row-contains-padding-bottom liquid-row-shadowbox-6277d56dea9f4 vc_row-has-fill vc_row-has-bg vc_column-gap-0 vc_row-o-equal-height vc_row-o-content-bottom vc_row-flex">
-        <div class="ld-container container-fluid">
-            <div class="row ld-row">
-                <style>
-                    @media (min-width: 768px) {
-                        .liquid-column-responsive-6277d56deac98>.vc_column-inner>.wpb_wrapper {
-                            padding-top: 10px !important;
-                            padding-right: 60px !important;
-                            padding-bottom: 60px !important;
-                            padding-left: 60px !important;
-                        }
-                    }
 
-                    @media (min-width: 992px) {
-                        .liquid-column-responsive-6277d56deac98>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 60px !important;
-                        }
-                    }
+    <section class="">
+        <div class="container pt-0 pb-0">
+            <div class="section-content">
+                <div class="row equal-height-inner mt-sm-0" data-margin-top="15px">
 
-                    @media (min-width: 1200px) {
-                        .liquid-column-responsive-6277d56deac98>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 0px !important;
-                        }
-                    }
-
-                </style>
-                <div
-                    class="green-bg wpb_column vc_column_container vc_col-sm-4 liquid-column-6277d56deac96 liquid-column-responsive-6277d56deac98 vc_col-has-fill">
-                    <div class="vc_column-inner">
-                        <div class="wpb_wrapper vc_custom_1631780570692" style="background-position:left bottom !important;">
-                            <div class="wpb_wrapper-inner">
-                                <div
-                                    class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1629983034145 liquid_vc_single_image-6277d56deeee9">
-
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper vc_box_border_grey loaded"><img width="72"
-                                                height="72"
-                                                src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-Career-Advice.png"
-                                                class="vc_single_image-img attachment-full ld-lazyload loaded" alt=""
-                                                loading="lazy"
-                                                data-src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-Career-Advice.png"
-                                                data-aspect="1" srcset="" data-was-processed="true"></div>
-                                    </figure>
+                    <div
+                        class="col-sm-4 col-md-4 pr-0 pr-sm-0 pl-sm-15 pr-xs-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
+                        <div class="sm-height-auto" style="padding: 10px;">
+                            <div class="bg-theme-colored-gradient text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40">
+                                <div class="media-body">
+                                    <i class="fa fa-line-chart font-42 text-white"></i>
+                                    <h3 class="heading text-white mt-0">
+                                        Get career advice.
+                                    </h3>
+                                    <p class="text-white">
+                                        Advising you and helping you grow in your career is our goal!
+                                    </p>
+                                    <a href="{{ route('carrer_advice.index') }}"
+                                        class="btn btn-md btn-default mt-10 no-border"
+                                        style="background-color:orange; color: white; font-weight: bold">
+                                        Our Tips
+                                    </a>
                                 </div>
-                                <h2 style="color: #ffffff;text-align: center"
-                                    class="vc_custom_heading vc_custom_1629982625514">Get career advice.</h2>
-                                <div class="wpb_text_column wpb_content_element  txt-white">
-                                    <div class="wpb_wrapper">
-                                        <p style="text-align: center;">Advising you and helping you grow in your career is
-                                            our goal!</p>
-
-                                    </div>
-                                </div>
-                                <div
-                                    class="vc_btn3-container link-anchor wpb_animate_when_almost_visible wpb_bounceIn bounceIn vc_btn3-center vc_custom_1642519871314 wpb_start_animation animated">
-                                    <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-vista-blue"
-                                        href="#tips" title="">Our tips</a></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <style>
-                    @media (min-width: 768px) {
-                        .liquid-column-responsive-6277d56defd59>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 60px !important;
-                        }
-                    }
 
-                    @media (min-width: 992px) {
-                        .liquid-column-responsive-6277d56defd59>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 60px !important;
-                        }
-                    }
-
-                    @media (min-width: 1200px) {
-                        .liquid-column-responsive-6277d56defd59>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 0px !important;
-                        }
-                    }
-
-                </style>
-                <div
-                    class="white-bg wpb_column vc_column_container vc_col-sm-4 liquid-column-6277d56defd56 liquid-column-responsive-6277d56defd59 vc_col-has-fill">
-                    <div class="vc_column-inner">
-                        <div class="wpb_wrapper vc_custom_1630573753697"
-                            style="background-position:right bottom !important;">
-                            <div class="wpb_wrapper-inner">
-                                <div
-                                    class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1629983025549 liquid_vc_single_image-6277d56df339d">
-
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper vc_box_border_grey loaded"><img width="72"
-                                                height="72"
-                                                src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-CV-Yellow-1.png"
-                                                class="vc_single_image-img attachment-full ld-lazyload loaded" alt=""
-                                                loading="lazy"
-                                                data-src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-CV-Yellow-1.png"
-                                                data-aspect="1" srcset="" data-was-processed="true"></div>
-                                    </figure>
+                    <div
+                        class="col-sm-4 col-md-4 pl-0 pr-0 pr-sm-0 pl-sm-0 pr-xs-15 pl-xs-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+                        <div class="sm-height-auto" style="padding: 10px;">
+                            <div class="text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
+                                style="background-color: #75173e;
+                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#75173e), to(#d1709a));
+                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #75173e, #d1709a);">
+                                <div class="media-body">
+                                    <i class="fa fa-file-text font-42 text-white"></i>
+                                    <h3 class="heading text-white mt-0">
+                                        Send your CV.
+                                    </h3>
+                                    <p class="text-white">
+                                        Get uploaded to our database to connect with our recruiters.
+                                    </p>
+                                    <a href="{{ route('cv.index') }}" class="btn btn-md btn-default mt-10 no-border"
+                                        style="background-color: #193872; color: white; font-weight: bold">
+                                        Upload Now
+                                    </a>
                                 </div>
-                                <h2 style="color: #f2a205;text-align: center"
-                                    class="vc_custom_heading vc_custom_1629982620824">Send your CV.</h2>
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p style="text-align: center;">Get uploaded to our database to connect with our
-                                            recruiters.</p>
-
-                                    </div>
-                                </div>
-                                <div
-                                    class="vc_btn3-container wpb_animate_when_almost_visible wpb_bounceIn bounceIn vc_btn3-center vc_custom_1642520196823 wpb_start_animation animated">
-                                    <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning"
-                                        href="https://www.approachpeople.com/contact" title="Contact">Upload now</a></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <style>
-                    @media (min-width: 768px) {
-                        .liquid-column-responsive-6277d56df3a20>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 60px !important;
-                        }
-                    }
 
-                    @media (min-width: 992px) {
-                        .liquid-column-responsive-6277d56df3a20>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 60px !important;
-                        }
-                    }
-
-                    @media (min-width: 1200px) {
-                        .liquid-column-responsive-6277d56df3a20>.vc_column-inner>.wpb_wrapper {
-                            padding-bottom: 0px !important;
-                        }
-                    }
-
-                </style>
-                <div
-                    class="green-bg wpb_column vc_column_container vc_col-sm-4 liquid-column-6277d56df3a1e liquid-column-responsive-6277d56df3a20">
-                    <div class="vc_column-inner">
-                        <div class="wpb_wrapper vc_custom_1630573763332">
-                            <div class="wpb_wrapper-inner">
-                                <div
-                                    class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1629983028850 liquid_vc_single_image-6277d56e02fe8">
-
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper vc_box_border_grey loaded"><img width="72"
-                                                height="72"
-                                                src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-Work-Abroad-White.png"
-                                                class="vc_single_image-img attachment-full ld-lazyload loaded" alt=""
-                                                loading="lazy"
-                                                data-src="https://www.approachpeople.com/wp-content/uploads/2021/08/Icon-candidates-Work-Abroad-White.png"
-                                                data-aspect="1" srcset="" data-was-processed="true"></div>
-                                    </figure>
+                    <div
+                        class="col-sm-4 col-md-4 pl-0 pr-sm-15 pl-sm-0 pl-xs-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+                        <div class="sm-height-auto" style="padding: 10px;">
+                            <div class="bg-theme-colored3 text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
+                                style="background-color: #317229;
+                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#317229), to(#50ed3b));
+                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #317229, #50ed3b);">
+                                <div class="media-body">
+                                    <i class="fa fa-globe font-42 text-white"></i>
+                                    <h3 class="heading text-white mt-0">
+                                        Work abroad.
+                                    </h3>
+                                    <p class="text-white">
+                                        Get ready to find a job overseas and discover our offers in Japan!
+                                    </p>
+                                    <a href="{{ route('overseas_jobs.show', 1) }}"
+                                        class="btn btn-md  btn-default mt-10 no-border"
+                                        style="background-color: #75173e; color: white; font-weight: bold">
+                                        Learn More
+                                    </a>
                                 </div>
-                                <h2 style="color: #ffffff;text-align: center"
-                                    class="vc_custom_heading vc_custom_1629982641771">Work abroad.</h2>
-                                <div class="wpb_text_column wpb_content_element  txt-white">
-                                    <div class="wpb_wrapper">
-                                        <p style="text-align: center;">Get ready to find a job overseas and discover our
-                                            offers in Europe!</p>
-
-                                    </div>
-                                </div>
-                                <div
-                                    class="vc_btn3-container link-anchor wpb_animate_when_almost_visible wpb_bounceIn bounceIn vc_btn3-center vc_custom_1643358295340 wpb_start_animation animated">
-                                    <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-vista-blue"
-                                        href="#work-abroad" title="">Learn more</a></div>
                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section class="bg-lighter">
+        <div class="container-fluid pt-0 pb-0">
+            <div class="section-content">
+                <div class="row equal-height">
+                    <br><br>
+                    <div class="col-xs-12 col-sm-12 col-md-6 pr-30 pl-30">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <div class="icon-box-new bg-white text-center clearfix m-0 pr-15 pl-15 pt-30 pb-20 mb-40">
+                                    <a href="#" class="icon icon-circled icon-md flip mb-20">
+                                        <i class="fa fa-object-group font-32 text-white"></i>
+                                    </a>
+                                    <h4 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
+                                        OUR VISION
+                                    </h4>
+                                    <p>
+                                        Our vision is to become the employers’ preferred Recruitment Agency of choice based
+                                        on the extent and quality of our services
+                                    </p>
+                                    <a class="btn btn-sm btn-flat btn-theme-colored2 mt-15 mb-sm-30 mt-sm-0"
+                                        href="{{ route('company_statement.index') }}">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="icon-box-new bg-white text-center clearfix m-0 pr-15 pl-15 pt-30 pb-20 mb-40">
+                                    <a href="#" class="icon icon-circled icon-md flip mb-20">
+                                        <i class="fa fa-arrows-alt font-32 text-white"></i>
+                                    </a>
+                                    <h4 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
+                                        OUR MISSION
+                                    </h4>
+                                    <p>
+                                        Our mission is to support employers to succeed business operations through their
+                                        excellent workforce; to empower our candidates
+                                    </p>
+                                    <a class="btn btn-sm btn-flat btn-theme-colored2 mt-15 mb-sm-30 mt-sm-0"
+                                        href="{{ route('company_statement.index') }}">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="icon-box-new bg-white text-center clearfix m-0 pr-15 pl-15 pt-30 pb-20 mb-40">
+                                    <a href="#" class="icon icon-circled icon-md flip mb-20">
+                                        <i class="fa fa-diamond font-32 text-white"></i>
+                                    </a>
+                                    <h4 class="icon-box-title mt-5 mb-15 letter-space-1 line-height-1">
+                                        OUR CORE PRINCIPLES
+                                    </h4>
+                                    <p>
+                                        <b>Integrity:</b> We embrace and uphold the highest standards of personal and
+                                        professional
+                                        ethics, honesty and trust.
+                                    </p>
+                                    <a class="btn btn-sm btn-flat btn-theme-colored2 mt-15 mb-sm-30 mt-sm-0"
+                                        href="{{ route('company_statement.index') }}">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-60">
+                            <div class="col-sm-12 col-sm-12 col-md-12 sm-text-center">
+                                <h2 class="mt-0 mt-sm-30 line-height-1 line-bottom-edu">
+                                    About
+                                    <span class="" style="text-shadow: 2px 2px 2px gray; color: #2977b4">
+                                        Saint Arkar Company Limited
+                                    </span>
+                                </h2>
+                                <p class="font-15 pb-sm-10" style="text-align: justify">
+                                    Saint Arkar Company Limited was established and obtain the agency license (License
+                                    No.2238/2013) in 2013. We, thereafter, we obtained our agency license (138/2015) and
+                                    subsequently we obtained the employment agency license (112/2017) for Thailand in 2017
+                                    which the licenses are issued by the Ministry of Labor, Immigration and Population,
+                                    Republic of the Union of Myanmar. We are also the member of Myanmar Oversea Employment
+                                    Agencies Federation (MOEAF) . We have signed the code of conduct developed by developed
+                                    by the Myanmar Overseas Employment Agencies Federation (MOEAF), in collaboration with
+                                    the Ministry of Labour, Immigration and Population (MOLIP) and with technical input from
+                                    the ILO TRIANGLE in ASEAN project.
+                                </p>
+                                <a class="btn btn-lg btn-flat btn-theme-colored2 mt-15 mb-sm-30 mt-sm-0"
+                                    href="{{ route('about.index') }}">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 pr-30 pl-30">
+                        <div class="col-xs-10 col-sm-10 col-md-10">
+                            <iframe width="150" height="70" src="https://www.youtube.com/embed/sbGKmw9ixpY"
+                                allowfullscreen></iframe>
+
+                            <iframe style="padding-top: 10px;" width="150" height="70"
+                                src="https://www.youtube.com/embed/NQ6_Sqt_w3Y" allowfullscreen></iframe>
+
+                            <iframe style="padding-top: 10px;" width="150" height="70"
+                                src="https://www.youtube.com/embed/gAw89LEKx3s" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        h3 {
+            font-size: 1.17em;
+            margin: 1em 0;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .ch-grid {
+            margin: 0 0 0 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .ch-grid li {
+            width: 220px;
+            height: 220px;
+            display: inline-block;
+            margin: 50px;
+        }
+
+        .ch-item {
+            background-color: #0000a4;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            cursor: default;
+            box-shadow:
+                inset 0 0 0 0 rgba(200, 95, 66, 0.4),
+                inset 0 0 0 16px rgba(22, 204, 188, 0.6),
+                0 1px 2px rgba(0, 0, 0, 0.1);
+
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .ch-info {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0;
+
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -o-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+
+            -webkit-backface-visibility: hidden;
+            /*for a smooth font */
+
+        }
+
+        .ch-info h3 {
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin: 0 30px;
+            padding: 65px 0 0 0;
+            height: 110px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            text-shadow:
+                0 0 1px #fff,
+                0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .ch-info p {
+            color: #fff;
+            padding: 10px 5px;
+            font-style: italic;
+            margin: 0 30px;
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .ch-info p a {
+            display: block;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 1px;
+            padding-top: 4px;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+        .ch-info p a:hover {
+            color: #fff222;
+            color: rgba(255, 242, 34, 0.8);
+        }
+
+        .ch-item:hover {
+            box-shadow:
+                inset 0 0 0 110px rgba(236, 233, 233, 0.4),
+                inset 0 0 0 16px rgba(255, 255, 255, 0.8),
+                0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .ch-item:hover .ch-info {
+            opacity: 1;
+
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+    </style>
+    <ul class="ch-grid country_bg" style="background-color: white">
+        @foreach ($countries as $country)
+            <li>
+                <div class="ch-item" style="background-image: url(https://cdn4.iconfinder.com/data/icons/free-scuba-diving-icon-set/128/seahorse.png);
+                    background-repeat: no-repeat;
+                    background-position: center;">
+                    <div class="ch-info">
+                        <a href="{{ route('overseas_jobs.show', $country->id) }}">
+                            <h3>{{ $country->country ?? '' }}</h3>
+                            <p>Jobs</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        @endforeach
+    </ul>
 @endsection

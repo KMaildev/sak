@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Country;
-use App\Models\Partner;
 use Illuminate\Http\Request;
 
-class PartnerController extends Controller
+class CompanyStatementController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        $partners = Country::with('parter_table')->get();
-        return view('partner.index', compact('partners'));
+        return view('company_statement.index');
     }
 
     /**

@@ -1,6 +1,6 @@
 <header id="header" class="header">
 
-    <div class="header-top bg-theme-colored2 sm-text-center">
+    <div class="header-top  sm-text-center" style="background-color:#3484ad;">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="{{ route('home') }}">
-                        <img src="{{ asset('assets/images/logo-wide.png') }}" alt="">
+                        <img src="{{ asset('data/logo.jpg') }}" alt="" style="width: 100%">
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9">
@@ -113,7 +113,14 @@
                                         MD'S Message
                                     </a>
                                 </li>
-                 
+
+
+                                <li>
+                                    <a href="{{ route('company_statement.index') }}">
+                                        Vision / Mission / Values
+                                    </a>
+                                </li>
+
 
                                 <li>
                                     <a href="{{ route('team.index') }}">
@@ -214,7 +221,7 @@
 
                     <div class="pull-right sm-pull-none mb-sm-15">
                         <a class="btn btn-colored btn-flat btn-theme-colored mt-15 mt-sm-10 pt-10 pb-10"
-                            href="{{ route('contact.index') }}">
+                            href="{{ route('contact.index') }}" style="background-color: #a23063;">
                             Contact Us
                         </a>
                     </div>

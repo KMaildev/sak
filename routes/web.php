@@ -23,6 +23,7 @@ Route::resource('activities', 'ActivitiesController');
 Route::resource('about', 'AboutController');
 Route::get('md_message', 'AboutController@md_message')->name('md_message');
 Route::get('who_we_are', 'AboutController@who_we_are')->name('who_we_are');
+Route::resource('company_statement', 'CompanyStatementController');
 
 
 // Kanji Japanese Language Training 
