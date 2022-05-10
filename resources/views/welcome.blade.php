@@ -39,7 +39,8 @@
         }
 
     </style>
-    <section class="">
+    <section class="bg-light">
+        <br>
         <div class="container pt-0 pb-0">
             <div class="section-content">
                 <div class="row equal-height-inner mt-sm-0" data-margin-top="15px">
@@ -71,11 +72,11 @@
                         <div class="sm-height-auto" style="padding: 10px;">
                             <div class="text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
                                 style="background-color: #75173e;
-                                                                    background: -webkit-gradient(linear, left top, left bottom, from(#75173e), to(#d1709a));
-                                                                    background: -webkit-linear-gradient(top, #75173e, #d1709a);
-                                                                    background: -moz-linear-gradient(top, #75173e, #d1709a);
-                                                                    background: -ms-linear-gradient(top, #75173e, #d1709a);
-                                                                    background: -o-linear-gradient(top, #75173e, #d1709a);">
+                                                                                                                                                    background: -webkit-gradient(linear, left top, left bottom, from(#75173e), to(#d1709a));
+                                                                                                                                                    background: -webkit-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                    background: -moz-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                    background: -ms-linear-gradient(top, #75173e, #d1709a);
+                                                                                                                                                    background: -o-linear-gradient(top, #75173e, #d1709a);">
                                 <div class="media-body">
                                     <i class="fa fa-file-text font-42 text-white"></i>
                                     <h3 class="heading text-white mt-0">
@@ -98,11 +99,11 @@
                         <div class="sm-height-auto" style="padding: 10px;">
                             <div class="bg-theme-colored3 text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
                                 style="background-color: #317229;
-                                                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#317229), to(#50ed3b));
-                                                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #317229, #50ed3b);">
+                                                                                                                                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#317229), to(#50ed3b));
+                                                                                                                                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #317229, #50ed3b);">
                                 <div class="media-body">
                                     <i class="fa fa-globe font-42 text-white"></i>
                                     <h3 class="heading text-white mt-0">
@@ -127,74 +128,110 @@
         <br>
     </section>
 
-
-
     <section id="about">
         <div class="container pb-90 pb-sm-90">
             <div class="section-content">
                 <div class="row">
-                    <div class="col-sm-7 col-md-8">
-                        <h2 class="mt-0 line-height-1 line-bottom-edu">Welcome to <span
-                                class="text-theme-colored3">EduPoints</span></h2>
-                        <p class="lead mb-10">We can change life with the teach of student by Eduhunt.</p>
-                        <p>We care for students, protect their welfare, and prepare them for the future are the most
-                            important issues we face during our lifetime.</p>
-                        <div class="row sm-text-center">
-                            <div class="col-sm-6 col-md-6">
-                                <div class="about-thumb">
-                                    <img src="images/about/1.jpg" class="mt-5" alt="">
-                                </div>
-                                <div class="mb-15">
-                                    <h4 class="font-raleway font-weight-700 mt-15"><a href="#">Graduate <span
-                                                class="text-theme-colored3">Education</span></a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quas, quidem totam,
-                                        fuga iste et voluptatem tempora molestiae.</p>
-                                    <a class="btn btn-colored btn-sm btn-circled btn-theme-colored mt-5"
-                                        href="page-about1.html">Read more</a>
-                                </div>
+
+                    <div class="col-sm-3 col-md-3">
+
+                        <div class=" ">
+                            <div class="py-5">
+                                <ul class="mt-5 mt-sm-20">
+                                    <a href="{{ route('carrer_advice.index') }}" class="btn btn-lg mb-20"
+                                        style="background-color:blue; color:white; font-weight:bold; font-size: 17px;">
+                                        Career Advice</a>
+                                </ul>
                             </div>
-                            
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4">
-                        
-                            
-                            
-                            
+
+                        <div class="">
+                            <div class="py-5">
+                                <ul class="mt-5 mt-sm-20">
+                                    <a href="{{ route('kanji_training.index') }}" class="btn btn-lg mb-20"
+                                        style="background-color:blue; color:white; font-weight:bold; font-size: 17px;">
+                                        Traing Center
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="">
                             <div class=" ">
-                                <div class="py-5">
-                                    <ul class="mt-5 mt-sm-20">
-                                        <a href="#" class="btn btn" style="background-color:blue; color:white; font-weight:bold;"> Career Advice</a>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                            <div class="">
-                                <div class="py-5">
-                                    <ul class="mt-5 mt-sm-20">
-                                        <a href="#" class="btn btn-" style="background-color:blue; color:white; font-weight:bold;"> KANJI Japanese Language Traing Center</a>
-                                    </ul>
-                                </div>
-                               
-                            </div>
-                            <div class="">
-                                <div class=" ">
-                                    <ul class="mt-5 mt-sm-20">
-                                        <a href="#" class="btn btn" style="background-color:blue; color:white; font-weight:bold;"> Policy of Languange Center</a>
-                                    </ul>
-                                </div>
-                                
+                                <ul class="mt-5 mt-sm-20">
+                                    <a href="{{ route('kanji_enrollment_request.index') }}" class="btn btn-lg mb-20"
+                                        style="background-color:blue; color:white; font-weight:bold; font-size: 17px;">
+                                        Our Policy Library
+                                    </a>
+                                </ul>
                             </div>
                         </div>
+
+                        <div class="">
+                            <div class=" ">
+                                <ul class="mt-5 mt-sm-20">
+                                    <a href="{{ route('cv.index') }}" class="btn btn-lg mb-20"
+                                        style="background-color:blue; color:white; font-weight:bold; font-size: 17px;">
+                                        Submit CV
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="">
+                            <div class=" ">
+                                <ul class="mt-5 mt-sm-20">
+                                    <a href="{{ route('kanji_news.index') }}" class="btn btn-lg mb-20"
+                                        style="background-color:blue; color:white; font-weight:bold; font-size: 17px;">
+                                        Latest News
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <div class="col-sm-7 col-md-9">
+                        <h2 class="mt-0 line-height-1 line-bottom-edu">
+                            Our top selection
+                            <span class="text-theme-colored3">of tips.</span>
+                        </h2>
+
+                        <div class="row sm-text-center">
+                            @foreach ($news as $key => $new)
+                                @if ($key == 2)
+                                    @php
+                                        break;
+                                    @endphp
+                                @endif
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="about-thumb">
+                                        <img src="{{ $new->photo }}" alt="" class="img-responsive img-fullwidth"
+                                            style="width: 100%; height: 250px; background-size: center; object-fit: cover;">
+                                    </div>
+                                    <div class="mb-15">
+                                        <h4 class="font-raleway font-weight-700 mt-15">
+                                            <a href="{{ route('kanji_news.show', $new->id) }}">
+                                                <span class="text-theme-colored3">{{ $new->title_eng }}</span>
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            {{ Str::limit($new->description_eng, 100) }}
+                                        </p>
+                                        <a class="btn btn-colored btn-sm btn-circled btn-theme-colored mt-5"
+                                            href="{{ route('kanji_news.show', $new->id) }}">Read more</a>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
-
-
-
 
     <section class="bg-lighter">
         <div class="container-fluid pt-0 pb-0">
@@ -303,6 +340,77 @@
         </div>
     </section>
 
+    <section class="bg-theme-colored">
+        <div class="container">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-white text-center line-height-1 mt-0">Our Success</h2>
+                        <p class="text-white-f2 text-center">Lorem ipsum dolor simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="0.3s">
+                                <div class="funfact">
+                                    <i class="pe-7s-notebook text-white mt-20 font-48 pull-left flip"></i>
+                                    <div class="ml-60">
+                                        <h2 class="animate-number text-white-f1 mt-0 mb-0 font-48 line-bottom-white"
+                                            data-value="280" data-animation-duration="2000">0</h2>
+                                        <div class="clearfix"></div>
+                                        <h5 class="text-white-f2">Courses</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="0.4s">
+                                <div class="funfact">
+                                    <i class="pe-7s-users text-white mt-20 font-48 pull-left flip"></i>
+                                    <div class="ml-60">
+                                        <h2 class="animate-number text-white-f1 mt-0 mb-0 font-48 line-bottom-white"
+                                            data-value="15K" data-animation-duration="2500">0</h2>
+                                        <div class="clearfix"></div>
+                                        <h5 class="text-white-f2">Students</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
+                                <div class="funfact">
+                                    <i class="pe-7s-study text-white mt-20 font-48 pull-left flip"></i>
+                                    <div class="ml-60">
+                                        <h2 class="animate-number text-white-f1 mt-0 mb-0 font-48 line-bottom-white"
+                                            data-value="10K" data-animation-duration="3000">0</h2>
+                                        <div class="clearfix"></div>
+                                        <h5 class="text-white-f2">Graduate Students</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="0.5s">
+                                <div class="funfact">
+                                    <i class="pe-7s-cup text-white mt-20 font-48 pull-left flip"></i>
+                                    <div class="ml-60">
+                                        <h2 class="animate-number text-white-f1 mt-0 mb-0 font-48 line-bottom-white"
+                                            data-value="189" data-animation-duration="3000">0</h2>
+                                        <div class="clearfix"></div>
+                                        <h5 class="text-white-f2">Awards</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="" style="background-color: white">
         <br><br>
         <div class="container pt-0 pb-0">
@@ -310,6 +418,14 @@
                 <div class="row equal-height">
                     <div class="col-xs-12 col-sm-12 col-md-12 pr-30 pl-30">
                         <div class="row">
+                            <center>
+                                <h2 class="mt-0 ">
+                                    Choose a Location
+                                </h2>
+                                <p class="" style="color:black; font-size:14px;">We have international career
+                                    opportunities all across Asia.</p>
+                            </center>
+                            <br>
                             @foreach ($countries as $country)
                                 <div class="col-sm-6 col-lg-3 col-md-3">
                                     <div class="icon-box-new iconsq text-center clearfix m-0 pr-15 pl-15 pt-30 pb-20 mb-40"
@@ -333,4 +449,5 @@
             </div>
         </div>
     </section>
+
 @endsection

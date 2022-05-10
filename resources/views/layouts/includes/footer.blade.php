@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <a href="{{ route('contact.index') }}" class="btn btn-colored btn-gray btn-lg mt-20">Contact
+                    <a href="{{ route('contact.index') }}" class="btn btn-colored btn-gray btn-lg mt-20" style="background-color: #a23063; color: white;">Contact
                         Now</a>
                 </div>
             </div>
