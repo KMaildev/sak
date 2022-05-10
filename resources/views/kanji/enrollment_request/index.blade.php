@@ -1,5 +1,5 @@
 @extends('layouts.kanji')
-@section('title', 'JOBS IN OVERSEAS')
+@section('title', 'သင်တန်းဝင်ခွင့်လျှောက်လွှာ')
 @section('content')
 
     <section id="about">
@@ -10,7 +10,7 @@
 
                         <div class="bg-lightest border-1px p-30 mb-0">
                             <h3 class="text-theme-colored mt-0 pt-5">
-                                <span>Talk to our</span> specialist consultants
+                                <span>သင်တန်းဝင်ခွင့်လျှောက်လွှာ</span>
                             </h3>
                             <span>
                                 CV Form ဖြည့်ရာတွင် ဂရုပြုရမည့် အချက်များ

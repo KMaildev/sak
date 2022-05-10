@@ -1,9 +1,8 @@
 @include('layouts.kanji.header')
 
-@if (request()->route()->getName() == 'home')
+{{-- @if (Route::currentRouteName() == 'kanji_training.index')
     @include('layouts.kanji.slider')
-@endif
-
+@endif --}}
 
 @include('layouts.kanji.alert')
 @yield('content')

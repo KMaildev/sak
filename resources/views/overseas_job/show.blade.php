@@ -62,7 +62,6 @@
         .border-all-1 {
             border: 1px solid;
         }
-
     </style>
 
     <section style="background-color: #fafafa;">

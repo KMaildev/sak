@@ -1,7 +1,44 @@
 @extends('layouts.app')
 @section('title', 'Home')
 @section('content')
+    <style>
+        .ch-info h3 {
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin: 0 30px;
+            padding: 10px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            text-shadow:
+                0 0 1px #fff,
+                0 1px 2px rgba(0, 0, 0, 0.3);
+        }
 
+        .ch-info p {
+            color: #fff;
+            padding: 10px 5px;
+            font-style: italic;
+            margin: 0 30px;
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .ch-info p a {
+            display: block;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 1px;
+            padding-top: 4px;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+    </style>
     <section class="">
         <div class="container pt-0 pb-0">
             <div class="section-content">
@@ -34,11 +71,11 @@
                         <div class="sm-height-auto" style="padding: 10px;">
                             <div class="text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
                                 style="background-color: #75173e;
-                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#75173e), to(#d1709a));
-                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #75173e, #d1709a);
-                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #75173e, #d1709a);
-                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #75173e, #d1709a);
-                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #75173e, #d1709a);">
+                                                                    background: -webkit-gradient(linear, left top, left bottom, from(#75173e), to(#d1709a));
+                                                                    background: -webkit-linear-gradient(top, #75173e, #d1709a);
+                                                                    background: -moz-linear-gradient(top, #75173e, #d1709a);
+                                                                    background: -ms-linear-gradient(top, #75173e, #d1709a);
+                                                                    background: -o-linear-gradient(top, #75173e, #d1709a);">
                                 <div class="media-body">
                                     <i class="fa fa-file-text font-42 text-white"></i>
                                     <h3 class="heading text-white mt-0">
@@ -61,11 +98,11 @@
                         <div class="sm-height-auto" style="padding: 10px;">
                             <div class="bg-theme-colored3 text-center sm-text-center mb-sm-10 p-30 pt-40 pb-40"
                                 style="background-color: #317229;
-                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#317229), to(#50ed3b));
-                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #317229, #50ed3b);
-                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #317229, #50ed3b);">
+                                                                                                                                                                                                                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#317229), to(#50ed3b));
+                                                                                                                                                                                                                                                                                background: -webkit-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                background: -moz-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                background: -ms-linear-gradient(top, #317229, #50ed3b);
+                                                                                                                                                                                                                                                                                background: -o-linear-gradient(top, #317229, #50ed3b);">
                                 <div class="media-body">
                                     <i class="fa fa-globe font-42 text-white"></i>
                                     <h3 class="heading text-white mt-0">
@@ -89,6 +126,75 @@
         </div>
         <br>
     </section>
+
+
+
+    <section id="about">
+        <div class="container pb-90 pb-sm-90">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-7 col-md-8">
+                        <h2 class="mt-0 line-height-1 line-bottom-edu">Welcome to <span
+                                class="text-theme-colored3">EduPoints</span></h2>
+                        <p class="lead mb-10">We can change life with the teach of student by Eduhunt.</p>
+                        <p>We care for students, protect their welfare, and prepare them for the future are the most
+                            important issues we face during our lifetime.</p>
+                        <div class="row sm-text-center">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="about-thumb">
+                                    <img src="images/about/1.jpg" class="mt-5" alt="">
+                                </div>
+                                <div class="mb-15">
+                                    <h4 class="font-raleway font-weight-700 mt-15"><a href="#">Graduate <span
+                                                class="text-theme-colored3">Education</span></a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quas, quidem totam,
+                                        fuga iste et voluptatem tempora molestiae.</p>
+                                    <a class="btn btn-colored btn-sm btn-circled btn-theme-colored mt-5"
+                                        href="page-about1.html">Read more</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        
+                            
+                            
+                            
+                            <div class=" ">
+                                <div class="py-5">
+                                    <ul class="mt-5 mt-sm-20">
+                                        <a href="#" class="btn btn" style="background-color:blue; color:white; font-weight:bold;"> Career Advice</a>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="">
+                                <div class="py-5">
+                                    <ul class="mt-5 mt-sm-20">
+                                        <a href="#" class="btn btn-" style="background-color:blue; color:white; font-weight:bold;"> KANJI Japanese Language Traing Center</a>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <div class="">
+                                <div class=" ">
+                                    <ul class="mt-5 mt-sm-20">
+                                        <a href="#" class="btn btn" style="background-color:blue; color:white; font-weight:bold;"> Policy of Languange Center</a>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <section class="bg-lighter">
         <div class="container-fluid pt-0 pb-0">
@@ -197,159 +303,34 @@
         </div>
     </section>
 
-    <style>
-        a {
-            color: #555;
-            text-decoration: none;
-        }
-
-        h3 {
-            font-size: 1.17em;
-            margin: 1em 0;
-        }
-
-        * {
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .ch-grid {
-            margin: 0 0 0 0;
-            padding: 0;
-            list-style: none;
-            display: block;
-            text-align: center;
-            width: 100%;
-        }
-
-        .ch-grid li {
-            width: 220px;
-            height: 220px;
-            display: inline-block;
-            margin: 50px;
-        }
-
-        .ch-item {
-            background-color: #0000a4;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: relative;
-            cursor: default;
-            box-shadow:
-                inset 0 0 0 0 rgba(200, 95, 66, 0.4),
-                inset 0 0 0 16px rgba(22, 204, 188, 0.6),
-                0 1px 2px rgba(0, 0, 0, 0.1);
-
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-            -ms-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-        }
-
-        .ch-info {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            opacity: 0;
-
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-            -ms-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-
-            -webkit-transform: scale(0);
-            -moz-transform: scale(0);
-            -o-transform: scale(0);
-            -ms-transform: scale(0);
-            transform: scale(0);
-
-            -webkit-backface-visibility: hidden;
-            /*for a smooth font */
-
-        }
-
-        .ch-info h3 {
-            color: #fff;
-            text-transform: uppercase;
-            position: relative;
-            letter-spacing: 2px;
-            font-size: 22px;
-            margin: 0 30px;
-            padding: 65px 0 0 0;
-            height: 110px;
-            font-family: 'Open Sans', Arial, sans-serif;
-            text-shadow:
-                0 0 1px #fff,
-                0 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .ch-info p {
-            color: #fff;
-            padding: 10px 5px;
-            font-style: italic;
-            margin: 0 30px;
-            font-size: 12px;
-            border-top: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .ch-info p a {
-            display: block;
-            color: #fff;
-            color: rgba(255, 255, 255, 0.7);
-            font-style: normal;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 9px;
-            letter-spacing: 1px;
-            padding-top: 4px;
-            font-family: 'Open Sans', Arial, sans-serif;
-        }
-
-        .ch-info p a:hover {
-            color: #fff222;
-            color: rgba(255, 242, 34, 0.8);
-        }
-
-        .ch-item:hover {
-            box-shadow:
-                inset 0 0 0 110px rgba(236, 233, 233, 0.4),
-                inset 0 0 0 16px rgba(255, 255, 255, 0.8),
-                0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .ch-item:hover .ch-info {
-            opacity: 1;
-
-            -webkit-transform: scale(1);
-            -moz-transform: scale(1);
-            -o-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-        }
-
-    </style>
-    <ul class="ch-grid country_bg" style="background-color: white">
-        @foreach ($countries as $country)
-            <li>
-                <div class="ch-item" style="background-image: url({{ $country->photo }});
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: center; 
-                    object-fit: cover;
-                    ">
-                    <div class="ch-info">
-                        <a href="{{ route('overseas_jobs.show', $country->id) }}">
-                            <h3>{{ $country->country ?? '' }}</h3>
-                            <p>Search Jobs</p>
-                        </a>
+    <section class="" style="background-color: white">
+        <br><br>
+        <div class="container pt-0 pb-0">
+            <div class="section-content">
+                <div class="row equal-height">
+                    <div class="col-xs-12 col-sm-12 col-md-12 pr-30 pl-30">
+                        <div class="row">
+                            @foreach ($countries as $country)
+                                <div class="col-sm-6 col-lg-3 col-md-3">
+                                    <div class="icon-box-new iconsq text-center clearfix m-0 pr-15 pl-15 pt-30 pb-20 mb-40"
+                                        style="background-color: #{{ $country->color_code ?? 'bb8d2f' }}; border: 1px solid #cccccc;">
+                                        <img src="{{ $country->photo }}" alt=""
+                                            style="background-color: #{{ $country->color_code ?? 'bb8d2f' }}">
+                                        <div class="ch-info">
+                                            <a href="{{ route('overseas_jobs.show', $country->id) }}">
+                                                <h3>
+                                                    {{ $country->country ?? '' }}
+                                                </h3>
+                                                <p>Search Jobs</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-            </li>
-        @endforeach
-    </ul>
+            </div>
+        </div>
+    </section>
 @endsection
